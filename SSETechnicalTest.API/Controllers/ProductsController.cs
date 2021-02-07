@@ -55,6 +55,10 @@ namespace SSETechnicalTest.API.Controllers
             }
         }
 
+        /// <summary>
+        /// Retrieve a list of available categories
+        /// </summary>
+        /// <returns></returns>
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
@@ -85,6 +89,11 @@ namespace SSETechnicalTest.API.Controllers
             }
         }
 
+        /// <summary>
+        /// Retrieve a list of products based on the category specified
+        /// </summary>
+        /// <param name="categoryName"></param>
+        /// <returns></returns>
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
